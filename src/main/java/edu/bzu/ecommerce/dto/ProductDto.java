@@ -1,6 +1,5 @@
 package edu.bzu.ecommerce.dto;
 
-import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 public class ProductDto {

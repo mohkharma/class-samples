@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.concurrent.atomic.AtomicLong;
 
 @RestController()
-@RequestMapping(path="/greeting")
+@RequestMapping(path = "/greeting")
 public class GreetingController {
 
     private static final String template = "Hello, %s!";
@@ -24,7 +24,7 @@ public class GreetingController {
     }
 
     @GetMapping("/all")
-    public  User[] all(@RequestParam(value = "name", defaultValue = "World") String name) {
+    public User[] all(@RequestParam(value = "name", defaultValue = "World") String name) {
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<User[]> response =
                 restTemplate.getForEntity(

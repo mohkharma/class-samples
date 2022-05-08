@@ -1,7 +1,6 @@
 package edu.bzu.ecommerce.service;
 
 import edu.bzu.ecommerce.model.Order;
-import edu.bzu.ecommerce.model.OrderStatus;
 import edu.bzu.ecommerce.repository.OrderRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

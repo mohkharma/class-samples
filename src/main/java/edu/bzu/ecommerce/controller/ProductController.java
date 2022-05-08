@@ -3,16 +3,13 @@ package edu.bzu.ecommerce.controller;
 import edu.bzu.ecommerce.exception.ResourceNotFoundException;
 import edu.bzu.ecommerce.model.Product;
 import edu.bzu.ecommerce.service.ProductService;
-import edu.bzu.ecommerce.util.ResponseUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.constraints.NotNull;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/products")

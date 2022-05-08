@@ -14,7 +14,7 @@ public interface OrderRepository extends CrudRepository<Order, Long> {
     Iterable<Order> findAllExcept(Long excludedId);
 
     @Query("SELECT o FROM Order o where o.id <> :excludedId")
-    Iterable<Order> findAllExceptWithParam(@Param("excludedId")  Long excludedId);
+    Iterable<Order> findAllExceptWithParam(@Param("excludedId") Long excludedId);
 
     @Query(value = "SELECT * FROM orders", nativeQuery = true)
     Iterable<Order> findAllNative();
